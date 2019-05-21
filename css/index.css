@@ -150,7 +150,15 @@ table {
 }
 @media (max-width: 500px) {
   .navigationContainer {
+    position: relative;
     max-width: 500px;
+    left: 0rem;
+  }
+}
+@media (max-width: 500px) {
+  .navigationContainer .hamburger {
+    position: relative;
+    right: -10rem;
   }
 }
 .navigationContainer .navLogo {
@@ -165,31 +173,60 @@ table {
   z-index: 1;
   right: 15%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   width: 500px;
   text-align: center;
 }
 @media (max-width: 500px) {
   .navigationContainer .navigationBar {
+    display: flex;
+    position: relative;
     max-width: 375px;
     font-size: 2rem;
+    right: 5rem;
   }
 }
 @media (max-width: 800px) {
   .navigationContainer .navigationBar {
     display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 3;
+    position: relative;
+    top: 13.25rem;
+    left: 10rem;
+    box-shadow: 1px 1px 5px silver;
+    background-color: rgba(213, 213, 213, 0.25);
+    width: 15rem;
+    z-index: -1;
   }
 }
 .navigationContainer .navigationBar .navigationItem {
   z-index: 1;
   text-decoration: none;
-  color: black;
+  color: #8b5fbf;
   font-size: 1rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-weight: 900;
+}
+@media (max-width: 500px) {
+  .navigationContainer .navigationBar .navigationItem {
+    left: 10rem;
+  }
+}
+@media (max-width: 800px) {
+  .navigationContainer .navigationBar .navigationItem {
+    position: relative;
+    top: -15px;
+    font-size: 2rem;
+    z-index: -1;
+  }
 }
 .navigationContainer .navigationBar .navigationItem:hover {
   color: #8b5fbf;
+}
+.navigationContainer .hidden {
+  display: none;
 }
 .bodyContainer .topHeaderSection {
   max-width: 1000px;
@@ -253,4 +290,7 @@ table {
   box-shadow: 2px 0.75px 10px grey;
   background: rgba(195, 195, 195, 0.75);
   margin: 0px auto;
+}
+.bodyContainer .showflex {
+  display: flex;
 }

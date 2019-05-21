@@ -11,9 +11,21 @@
     z-index: +1;
 
     @media(@phone){
+        position: relative;
         max-width: 500px;
+        left: 0rem;
     }
+    @media(@tablet){
+        
+    }
+    .hamburger{
+        @media(@phone){
+            position: relative;
+            right: -10rem;
 
+        }
+
+    }
     .navLogo{
         position: fixed;
         left: 7%;
@@ -26,27 +38,51 @@
         z-index: +1;
         right: 15%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         width: 500px;
         text-align: center;
         @media(@phone){
+            display: flex;
+            position: relative;
             max-width: 375px;
             font-size: 2rem;
+            right: 5rem;
         }
         @media(@tablet){
-            display:none;
+            .hidden;
+            flex-direction: column;
+            justify-content: space-around;
+            line-height: 3;
+            position: relative;
+            top: 13.25rem;
+            left: 10rem;
+            box-shadow: 1px 1px 5px silver;
+            background-color: rgba(213, 213, 213, .25);
+            width: 15rem;
+            z-index: -1;
         }
         .navigationItem{
             z-index: +1;
             text-decoration: none;
-            color: black;
+            color: @header-color;
             font-size: 1rem;
             font-family: @font-body;
-            font-weight: 600;
+            font-weight: 900;
+            @media(@phone){
+                left: 10rem;
+            }
+            @media(@tablet){
+                position: relative;
+                top: -15px;
+                font-size: 2rem;
+                z-index: -1;
+            }
         }
         .navigationItem:hover{
             color: @header-color;
         }
     }
+
+
 
 }
