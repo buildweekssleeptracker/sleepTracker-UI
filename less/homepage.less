@@ -1,0 +1,74 @@
+
+.bodyContainer{
+
+    .topHeaderSection{
+        max-width: 1000px;
+        margin: 0px auto;
+        position: relative;
+        top: 15rem;
+
+        .headerIMG{
+            background-image: url(../img/sleeping.jpg);
+            background-position: 50% 50%;
+            background-size: cover;
+            width: 1000px;
+            height: 500px;
+
+        }
+
+        .topHeader{
+            font-family: @font-headers;
+            color: @header-color;
+            font-size: 3rem;
+            text-align: center;
+            position: relative;
+            top: -80px;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .headerCards{
+            max-width: 1000px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0px auto;
+            .headerCard{
+                width: 18rem;
+                height: 21rem;
+                box-shadow: 2px .75px 10px grey;
+                background: rgba(195,195,195, .75);
+                margin: 0px auto;
+            }
+        }
+
+    }
+
+    .middleBodySection{
+        position: relative;
+        top: 30rem;
+        .middleHeader{
+            font-family: @font-headers;
+            color: @header-color;
+            font-size: 3rem;
+            text-align: center;
+            position: relative;
+            top: -80px;
+            text-shadow: 2px 2px 3px black;
+        }
+
+        .middleCards{
+            max-width: 1000px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0px auto;
+            .middleCard{
+                width: 18rem;
+                height: 21rem;
+                box-shadow: 2px .75px 10px grey;
+                background: rgba(195,195,195, .75);
+                margin: 0px auto;
+            }
+        }
+    }
+}
