@@ -1,0 +1,52 @@
+.navigationContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 3.5rem;
+    box-shadow: 1px 1px 5px silver;
+    position: fixed;
+    z-index: +1;
+
+    @media(@phone){
+        max-width: 500px;
+    }
+
+    .navLogo{
+        position: fixed;
+        left: 7%;
+        font-size: 2.25rem;
+        font-family: @font-headers;
+        color: @header-color;
+    }
+    .navigationBar{
+        position: fixed;
+        z-index: +1;
+        right: 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 500px;
+        text-align: center;
+        @media(@phone){
+            max-width: 375px;
+            font-size: 2rem;
+        }
+        @media(@tablet){
+            display:none;
+        }
+        .navigationItem{
+            z-index: +1;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-family: @font-body;
+            font-weight: 600;
+        }
+        .navigationItem:hover{
+            color: @header-color;
+        }
+    }
+
+}

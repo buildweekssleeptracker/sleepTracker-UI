@@ -136,3 +136,58 @@ table {
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
+.navigationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  height: 3.5rem;
+  box-shadow: 1px 1px 5px silver;
+  position: fixed;
+  z-index: 1;
+}
+@media (max-width: 500px) {
+  .navigationContainer {
+    max-width: 500px;
+  }
+}
+.navigationContainer .navLogo {
+  position: fixed;
+  left: 7%;
+  font-size: 2.25rem;
+  font-family: 'Baloo Bhaijaan', cursive;
+  color: #8b5fbf;
+}
+.navigationContainer .navigationBar {
+  position: fixed;
+  z-index: 1;
+  right: 15%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 500px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .navigationContainer .navigationBar {
+    max-width: 375px;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .navigationContainer .navigationBar {
+    display: none;
+  }
+}
+.navigationContainer .navigationBar .navigationItem {
+  z-index: 1;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.navigationContainer .navigationBar .navigationItem:hover {
+  color: #8b5fbf;
+}
