@@ -32,21 +32,75 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             margin: 0px auto;
+
+            @media(@phone) {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0px auto;       
+            }
+
             .headerCard{
                 width: 18rem;
                 height: 21rem;
                 box-shadow: 2px .75px 10px grey;
-                background: rgba(195,195,195, .75);
+                //background: rgba(195,195,195, .75);
                 margin: 0px auto;
+
+                @media(@phone) {
+                    margin: 1.5rem auto;
+                }
+
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
             }
+
+            .card1{
+                background-image: url(../img/sleeping.jpg);
+                width: 18rem;
+                height: 21rem;
+                background-size: cover;
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
+            }
+            .card2{
+                background-image: url(../img/sleeping2.jpg);
+                width: 18rem;
+                height: 21rem;
+                background-size: cover;
+                background-position: 50% 0%;
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
+            }
+            .card3{
+                background-image: url(../img/sleeping3.jpg);
+                width: 18rem;
+                height: 21rem;
+                background-size: cover;
+                background-position: 15% 0%;
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
+            }
+
         }
 
     }
 
-    .middleBodySection{
+    .bottomBodySection{
         position: relative;
         top: 30rem;
-        .middleHeader{
+        margin-bottom: 10rem;
+
+        .bottomHeader{
             font-family: @font-headers;
             color: @header-color;
             font-size: 3rem;
@@ -56,23 +110,160 @@
             text-shadow: 2px 2px 3px black;
         }
 
-        .middleCards{
+        .bottomCards{
             max-width: 1000px;
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             margin: 0px auto;
-            .middleCard{
+
+            @media(@phone) {
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0px auto;       
+            }
+
+            .bottomCard{
                 width: 18rem;
                 height: 21rem;
                 box-shadow: 2px .75px 10px grey;
-                background: rgba(195,195,195, .75);
+                //background: rgba(195,195,195, .75);
                 margin: 0px auto;
+
+                @media(@phone) {
+                    margin: 1.5rem auto;
+                }
+
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
+            }
+
+
+            .card4{
+                background-image: url(../img/1face.png);
+                width: 18rem;
+                height: 21rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 0% 50%;
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
+            }
+            .card5{
+                background-image: url(../img/2face.png);
+                width: 18rem;
+                height: 21rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 0% 50%;
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
+            }
+            .card6{
+                background-image: url(../img/3face.png);
+                width: 18rem;
+                height: 21rem;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 0% 50%;
+                @media(@tablet) {
+                    width: 15rem;
+                    height: 18rem;
+                }
             }
         }
     }
 
+    footer{
+        position: relative;
+        top: 40rem;
+        width: 100%;
+        background-color: rgb(222,222,222);
+        height: 25rem;
+        .center;
+
+        @media(@tablet){
+            width: 800px;
+            margin: 0px auto;
+        }
+
+        @media(@phone){
+
+            width: 500px;
+            height: 53rem;
+        }
+
+        .footerNotes{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-between;
+            padding-top: 2.5rem;
+            .center;
+
+            @media(@tablet){
+                display: inline-flex;
+                padding-left: 9.5rem;
+                justify-content: space-between;
+            }
+
+            @media(@phone){
+                display: inline-flex;
+                flex-direction: column;
+                padding-left: 5rem;
+            }
+
+            .footerNote{
+                box-shadow: 1px 1px 5px white;
+                width: 18rem;
+                height: 21rem;
+                .center;
+
+                @media(@tablet){
+                    position: relative;
+                    left: -4.25rem;;
+                    margin: 0px 1.5rem;
+                }
+                @media(@phone){
+                    margin-top: 2.5rem;
+
+                }
+            }
+        }
+
+        
+    }
+
+
+
     .showflex{
         display: flex;
+        
+        @media(@phone){
+            position: absolute;
+            left: 9.75rem;
+            top: 3.75rem;
+            z-index: +1;
+        }
+    }
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 40rem;
+    box-shadow: 1px 1px 5px silver;
+    p{
+    align-items: center;
+    margin: 0px auto;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
     }
 }
