@@ -276,6 +276,21 @@ table {
     margin: 0px auto;
   }
 }
+.bodyContainer .topHeaderSection .headerCards h1 {
+  color: #8b5fbf;
+  font-size: 2.25rem;
+  font-family: 'Baloo Bhaijaan', cursive;
+  margin: 0.75rem auto;
+  text-align: center;
+}
+.bodyContainer .topHeaderSection .headerCards p {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  max-width: 75%;
+  margin: 0px auto;
+}
 .bodyContainer .topHeaderSection .headerCards .headerCard {
   width: 18rem;
   height: 21rem;
@@ -361,10 +376,24 @@ table {
     margin: 0px auto;
   }
 }
+.bodyContainer .bottomBodySection .bottomCards h1 {
+  color: #8b5fbf;
+  font-size: 2.25rem;
+  font-family: 'Baloo Bhaijaan', cursive;
+  margin: 0.75rem auto;
+  text-align: center;
+}
+.bodyContainer .bottomBodySection .bottomCards p {
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  max-width: 75%;
+  margin: 0px auto;
+}
 .bodyContainer .bottomBodySection .bottomCards .bottomCard {
   width: 18rem;
   height: 21rem;
-  box-shadow: 2px 0.75px 10px grey;
   margin: 0px auto;
 }
 @media (max-width: 500px) {
@@ -425,7 +454,7 @@ table {
   top: 40rem;
   width: 100%;
   background-color: #dedede;
-  height: 25rem;
+  height: 15rem;
   margin: 0px auto;
 }
 @media (max-width: 800px) {
